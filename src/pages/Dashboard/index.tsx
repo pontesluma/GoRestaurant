@@ -66,12 +66,15 @@ const Dashboard: React.FC = () => {
     [editingFood.available, editingFood.id, foods],
   );
 
-  async function handleDeleteFood(id: number): Promise<void> {
-    await api.delete(`/foods/${id}`);
+  const handleDeleteFood = useCallback(
+    async (id: number) => {
+      await api.delete(`/foods/${id}`);
 
-    const updatedFoods = foods.filter(food => food.id !== id);
-    setFoods(updatedFoods);
-  }
+      const updatedFoods = foods.filter(food => food.id !== id);
+      setFoods(updatedFoods);
+    },
+    [foods],
+  );
 
   const toggleModal = useCallback(() => {
     setModalOpen(!modalOpen);
