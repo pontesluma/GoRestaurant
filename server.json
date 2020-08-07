@@ -1,14 +1,6 @@
 {
   "foods": [
     {
-      "id": 1,
-      "name": "Ao molho",
-      "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas.",
-      "price": "19.90",
-      "available": true,
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png"
-    },
-    {
       "id": 2,
       "name": "Veggie",
       "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
@@ -23,6 +15,22 @@
       "price": "25.90",
       "available": true,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "available": true,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "name": "Ao molho 2 teste",
+      "price": "30.99",
+      "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas.",
+      "id": 4
+    },
+    {
+      "available": true,
+      "image": "https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2019/12/08/812505/20191208124234449630o.jpg",
+      "name": "essa cor é mto clara",
+      "price": "77,77",
+      "description": "eu sou miope",
+      "id": 5
     }
   ]
 }
